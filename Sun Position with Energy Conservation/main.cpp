@@ -45,8 +45,9 @@ int main(int argc, char** argv)
 	earth->AddSatelite(moon);
 	Sun* sun = new Sun(6.9634, 5);
 	SystemCenter systemcenter = SystemCenter(0, 0, sun);
+	User* user = new User(-4.064501728800064, 40.71010524106721, 100000.2, earth);
 	//User* user = new User(-4.064501728800064, 40.71010524106721, 100000000.091, earth);
-	User* user = new User(-4.064501728800064, 40.71010524106721, 10000.2, earth);
+	//User* user = new User(-4.064501728800064, 40.71010524106721, 10000.2, earth);
 	SystemSimulation systemSimulation(earth, &systemcenter, user);
 
 	std::cout << "Iniciando simulacion\n";
